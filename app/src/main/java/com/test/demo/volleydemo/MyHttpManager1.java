@@ -29,7 +29,11 @@ public class MyHttpManager1 {
         return mpServerHttpManager;
     }
 
-    //types 为  "citylist"
+    /**
+     * 家图用法
+     * @param types
+     * @param callback
+     */
     public void userLogin(final String types, OkStringRequest.OKResponseCallback callback) {
         OkStringRequest okStringRequest = new OkStringRequest(Request.Method.POST, URL_SERVICE, callback) {
             @Override
